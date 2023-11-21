@@ -35,7 +35,7 @@ class BSC(HDCRepresentation):
     
     @classmethod
     def permute(cls, hv, n) -> np.ndarray:
-        return np.roll(hv, n)
+        return np.roll(hv, n * 8)
     
     @classmethod
     def sequence(cls, lst) -> np.ndarray:
